@@ -5,7 +5,7 @@ d3.csv("https://raw.githubusercontent.com/chumo/Data2Serve/master/transition_clu
 
 function processData(data){
     console.log(data);
-    var mySVG = d3.select("svg");
+    var mySVG = d3.select("randomclusters");
     var circles = mySVG.selectAll("circle").data(data);
 
     circles.enter().append("circle")
